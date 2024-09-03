@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyDiary</string>
+    <string name="addNewEntry">Adicionar Nova Entrada</string>
+    <string name="titleEntry">Título Entrada</string>
+    <string name="entry">Entrada</string>
+    <string name="date_entry">Data Entrada</string>
+    <string name="time_entry">Hora Entrada</string>
+    <string name="local">Local</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.details.DetailsActivity">
+
+    <TextView
+        android:id="@+id/text_label_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleEntry"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_title"
+        app:layout_constraintStart_toStartOf="@+id/edit_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/text_label_note"
+        app:layout_constraintStart_toStartOf="@+id/text_label_note"
+        app:layout_constraintTop_toBottomOf="@+id/text_label_title" />
+
+    <TextView
+        android:id="@+id/text_label_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/local"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_note"
+        app:layout_constraintStart_toStartOf="@+id/edit_note"
+        app:layout_constraintTop_toBottomOf="@+id/edit_title" />
+
+    <EditText
+        android:id="@+id/edit_note"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:scrollHorizontally="false"
+        app:layout_constraintBottom_toTopOf="@+id/text_label_local"
+        app:layout_constraintStart_toStartOf="@+id/text_label_local"
+        app:layout_constraintTop_toBottomOf="@+id/text_label_note" />
+
+    <TextView
+        android:id="@+id/text_label_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/entry"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_local"
+        app:layout_constraintStart_toStartOf="@+id/edit_local"
+        app:layout_constraintTop_toBottomOf="@+id/edit_note" />
+
+    <EditText
+        android:id="@+id/edit_local"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:minLines="4"
+        android:scrollHorizontally="false"
+        app:layout_constraintBottom_toTopOf="@+id/text_label_date_entry"
+        app:layout_constraintStart_toStartOf="@+id/text_label_date_entry"
+        app:layout_constraintTop_toBottomOf="@+id/text_label_local" />
+
+    <TextView
+        android:id="@+id/text_label_date_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_entry"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_entry_date"
+        app:layout_constraintStart_toStartOf="@+id/button_entry_date"
+        app:layout_constraintTop_toBottomOf="@+id/edit_local" />
+
+    <Button
+        android:id="@+id/button_entry_date"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/text_label_date_entry_time"
+        app:layout_constraintStart_toStartOf="@+id/text_label_date_entry_time"
+        app:layout_constraintTop_toBottomOf="@+id/text_label_date_entry" />
+
+    <TextView
+        android:id="@+id/text_label_date_entry_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_entry"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_entry_date_time"
+        app:layout_constraintStart_toStartOf="@+id/button_entry_date_time"
+        app:layout_constraintTop_toBottomOf="@+id/button_entry_date" />
+
+    <Button
+        android:id="@+id/button_entry_date_time"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_label_date_entry_time" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
